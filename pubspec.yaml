@@ -1,7 +1,7 @@
 name: check_disposable_email
 description: Using this Package developer can check whether the user provided Email address Domain name is valid or fake
 version: 0.0.1
-homepage:
+homepage: https://github.com/husen313/check_disposable_email
 
 environment:
   sdk: '>=2.19.4 <3.0.0'
