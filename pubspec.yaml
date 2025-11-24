@@ -1,10 +1,10 @@
 name: check_disposable_email
 description: Using this Package developer can check whether the user provided Email address Domain name is valid or fake
-version: 0.0.1
+version: 0.1.0
 homepage: https://github.com/husen313/check_disposable_email
 
 environment:
-  sdk: '>=2.19.4 <3.0.0'
+  sdk: ">=2.19.4 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
@@ -15,12 +15,10 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
-
-
 # The following section is specific to Flutter packages.
-flutter:
+# flutter:
 
-  # To add assets to your package, add an assets section, like this:
-  # assets:
-    # - lib/assets/domain/email_domain_list.json
-    # - images/a_dot_ham.jpeg
+# To add assets to your package, add an assets section, like this:
+# assets:
+# - lib/assets/domain/email_domain_list.json
+# - images/a_dot_ham.jpeg
