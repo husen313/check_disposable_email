@@ -226,9 +226,10 @@ The package includes comprehensive test coverage with 47+ tests covering:
 
 ## 📸 Screenshots
 
-![Disposable-Email-Demo]()
-![Valid-Email-Demo]()
-![Extraction-Email-Demo]()
+![Disposable-Email-Demo](https://github.com/user-attachments/assets/e2e44f3b-0544-4684-a2af-a16c1378d857) 
+![Valid-Email-Demo](https://github.com/user-attachments/assets/2b89ae5c-57fd-43a7-a315-8ca6956fe32e)
+![Extract-Domain-Demo](https://github.com/user-attachments/assets/30bf068a-af86-423f-be38-afbc2accd0d4)
+
 
 ## 🛠️ Example App
 
