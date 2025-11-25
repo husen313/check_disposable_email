@@ -62,7 +62,8 @@ class Disposable {
 
     // Check if empty
     if (trimmedEmail.isEmpty) {
-      return const _FormatValidationResult(false, 'Email address cannot be empty');
+      return const _FormatValidationResult(
+          false, 'Email address cannot be empty');
     }
 
     // Check maximum length
@@ -75,7 +76,8 @@ class Disposable {
 
     // Check if contains @ symbol
     if (!trimmedEmail.contains('@')) {
-      return const _FormatValidationResult(false, 'Email address must contain @ symbol');
+      return const _FormatValidationResult(
+          false, 'Email address must contain @ symbol');
     }
 
     // Split email into local and domain parts
@@ -114,20 +116,24 @@ class Disposable {
 
     // Check for consecutive dots
     if (domainPart.contains('..')) {
-      return const _FormatValidationResult(false, 'Domain cannot contain consecutive dots');
+      return const _FormatValidationResult(
+          false, 'Domain cannot contain consecutive dots');
     }
 
     // Check if domain starts or ends with dot or hyphen
     if (domainPart.startsWith('.') || domainPart.endsWith('.')) {
-      return const _FormatValidationResult(false, 'Domain cannot start or end with a dot');
+      return const _FormatValidationResult(
+          false, 'Domain cannot start or end with a dot');
     }
     if (domainPart.startsWith('-') || domainPart.endsWith('-')) {
-      return const _FormatValidationResult(false, 'Domain cannot start or end with a hyphen');
+      return const _FormatValidationResult(
+          false, 'Domain cannot start or end with a hyphen');
     }
 
     // Use regex for comprehensive format validation
     if (!_emailRegex.hasMatch(trimmedEmail)) {
-      return const _FormatValidationResult(false, 'Email address format is invalid');
+      return const _FormatValidationResult(
+          false, 'Email address format is invalid');
     }
 
     return const _FormatValidationResult(true, null);
@@ -207,7 +213,8 @@ class Disposable {
   EmailValidationResult validateEmail(String? email) {
     // Handle null input
     if (email == null) {
-      return EmailValidationResult.invalidFormat('Email address cannot be null');
+      return EmailValidationResult.invalidFormat(
+          'Email address cannot be null');
     }
 
     // Trim whitespace
@@ -222,7 +229,8 @@ class Disposable {
     // Extract and normalize domain
     final domain = extractDomain(trimmedEmail);
     if (domain == null) {
-      return EmailValidationResult.invalidFormat('Could not extract domain from email');
+      return EmailValidationResult.invalidFormat(
+          'Could not extract domain from email');
     }
 
     // Check against disposable domains (O(1) lookup with Set)

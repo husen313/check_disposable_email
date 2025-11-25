@@ -1,3 +1,18 @@
+## 0.2.1
+
+### 🔧 Code Quality Improvements
+
+- **Code Formatting**: Improved code formatting for better readability
+  - Split long lines into multiple lines following Dart formatting conventions
+  - Enhanced code consistency and maintainability
+  - Better adherence to Dart style guidelines
+
+### ⚠️ Breaking Changes
+
+- None - All changes are backward compatible and only affect code formatting.
+
+---
+
 ## 0.1.0
 
 ### 🚀 Major Enhancements
